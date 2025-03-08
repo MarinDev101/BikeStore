@@ -1,0 +1,127 @@
+@keyframes open {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes close {
+  from {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.hamburger-icon {
+  display: none;
+  border: none;
+  background-color: transparent;
+}
+
+.aside-responsive {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  z-index: 999;
+  width: 14rem;
+  height: 100dvh;
+  background-color: var(--color-1-negro);
+  box-shadow: -0.1rem 0rem 0.5rem var(--color-2-oscuro);
+  overflow: auto;
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+  scrollbar-width: thin; /* Barra delgada */
+  animation-duration: 200ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  height: 2.5rem;
+  background-color: var(--color-2-oscuro);
+  color: var(--color-5-blanco);
+  cursor: pointer;
+}
+
+.top-buttons a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 3.5rem;
+  padding-left: 1rem;
+  font-size: 1.1rem;
+  color: var(--color-5-blanco);
+  gap: 0.3rem;
+}
+
+.menu-action-aside {
+  background-color: var(--color-3-semi-oscuro);
+}
+
+.main-menu-aside {
+  background-color: var(--color-8-rojo);
+}
+
+.contact-aside {
+  background-color: var(--color-3-semi-oscuro);
+}
+
+@media (hover: hover) {
+  .menu-action-aside a:hover {
+    background-color: var(--color-4-semi-oscuro-intenso);
+  }
+  .main-menu-aside a:hover {
+    background-color: var(--color-9-rojo-intenso);
+  }
+  .contact-aside a:hover {
+    background-color: var(--color-4-semi-oscuro-intenso);
+  }
+}
+
+.social-networks-aside {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 3.5rem;
+  background-color: var(--color-2-oscuro);
+}
+
+.social-networks-aside a {
+  display: flex;
+  align-items: center;
+}
+
+@keyframes open-leave-aside {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.leave-aside {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.459);
+  width: 100vw;
+  height: 100vh;
+  z-index: 998;
+}

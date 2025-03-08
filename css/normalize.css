@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-1-negro: rgb(11, 11, 11);
+  --color-2-oscuro: rgb(23, 23, 23);
+  --color-3-semi-oscuro: rgb(34, 34, 34);
+  --color-4-semi-oscuro-intenso: rgb(30, 30, 30);
+  --color-5-blanco: rgb(255, 255, 255);
+  --color-6-claro: rgb(242, 242, 242);
+  --color-7-semi-claro: rgb(235, 235, 235);
+  --color-8-rojo: rgb(184, 21, 21);
+  --color-9-rojo-intenso: rgb(168, 17, 17);
+  --color-10-tooltip: rgb(54, 54, 54);
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: white rgb(36, 10, 10);
+  scrollbar-width: thin; /* Barra delgada */
+}
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+input,
+textarea,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+text-wrap: balance;
+}
+
+p{
+  text-wrap: pretty;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+img {
+  pointer-events: none;
+  user-select: none;
+}

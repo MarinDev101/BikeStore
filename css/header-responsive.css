@@ -1,0 +1,134 @@
+/*=============================================
+=            media query for laptop           =
+=============================================*/
+
+@media (width <= 1190px) {
+  /* quitar texto de los iconos del header middle */
+  .menu-actions a p {
+    display: none;
+  }
+  /* reasignar el tamaño del input del header middle */
+  .search-and-submit input {
+    width: 20vw;
+    min-width: 11.5rem;
+  }
+  /* reasignar el tamaño del texto del placeholder del input del header middle */
+  .search-and-submit input::placeholder {
+    font-size: 1.3rem;
+  }
+  /* reasignar tamaño del texto del header bottom */
+  .header-bottom p {
+    font-size: 0.93rem;
+  }
+  /* reasignar tamaño del texto del header top */
+  .contact p {
+    font-size: 0.93rem;
+  }
+  /* reasignar el tamaño del logo del header middle */
+  .logo-header img {
+    width: 16.5rem;
+  }
+}
+
+/*=====  End of media query for laptop  ======*/
+
+/*=============================================
+=            media query for tablet           =
+=============================================*/
+
+@media (width <= 850px) {
+  /* quitar iconos de redes sociales del header top */
+  .social-networks-header {
+    display: none;
+  }
+  /* quitar botón de contacto del header top */
+  .contact {
+    display: none;
+  }
+  /* reasignar el tamaño del texto de la promoción del header top */
+  .promotion p {
+    font-size: 0.93rem;
+  }
+  /* justificar al centro la promoción del header top */
+  .header-top {
+    justify-content: center;
+  }
+  /* reasignar el padding del header middle */
+  .header-middle {
+    padding: 0.5rem 3rem;
+  }
+  /* reasignar el tamaño del logo del header middle */
+  .logo-header img {
+    width: 15rem;
+  }
+  /* reasignar el tamaño del input del header middle */
+  .search-and-submit input {
+    width: 26vw;
+    min-width: 11.5rem;
+  }
+  /* quitar los iconos del menu actions del header middle */
+  .menu-actions a {
+    display: none;
+  }
+  /* habilitar el icono de hamburguesa del header middle  */
+  .hamburger-icon {
+    display: block;
+  }
+  /* reasignar el tamaño del icono de lupa y el icono de hamburguesa del header middle */
+  .menu-actions button img {
+    width: 2rem;
+  }
+  /* reasignar el tamaño del espaciado entre el icono de lupa y el icono de hamburguesa del header middle */
+  .menu-actions ul {
+    gap: 0.4rem;
+  }
+  /* quitar el header bottom */
+  .header-bottom {
+    display: none;
+  }
+}
+
+/*=====  End of media query for tablet  ======*/
+
+/*=============================================
+=            media query for phone            =
+=============================================*/
+
+@media (width <= 650px) {
+  /* reasignar el tamaño del texto de la promoción del header top */
+  .promotion p {
+    text-align: center;
+    font-size: clamp(0.5rem, 3.2vw, 0.93rem);
+  }
+  /* reasignar la dirección de los elementos del header middle */
+  .header-middle {
+    flex-direction: column;
+    padding: 1rem 0rem;
+    gap: 0.5rem;
+    ul {
+      gap: 0;
+    }
+  }
+  /* reasignar valores de menu action del header middle */
+  .menu-actions {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /* reasignar el tamaño del input del header middle */
+  .search-and-submit input {
+    width: 45vw;
+    min-width: 11.5rem;
+  }
+  /* reasignar el tamaño del texto del placeholder del input del header middle */
+  .search-and-submit input::placeholder {
+    font-size: 1.2rem;
+  }
+  /* reasignar el tamaño del logo del header middle */
+  .logo-header img {
+    width: 14rem;
+  }
+}
+
+/*=====  End of media query for phone  ======*/

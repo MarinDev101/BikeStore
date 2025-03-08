@@ -1,0 +1,142 @@
+/*=============================================
+=            media query for laptop           =
+=============================================*/
+
+@media (width <= 1190px) {
+  /*----------  inf-welcome  ----------*/
+  .carousel {
+    width: 90%;
+    height: 30vw;
+  }
+  /*----------------------------------*/
+  /*----------  inf-benefits  ----------*/
+
+  .benefits p {
+    font-size: 0.93rem;
+  }
+
+  .inf-benefits ul {
+    min-height: 250px;
+    height: 10vw;
+    /* max-height: 1000px; */
+    /* grid-template-rows: repeat(1, auto 1fr auto); */
+  }
+
+  /*----------------------------------*/
+}
+
+/*=====  End of media query for laptop  ======*/
+
+/*=============================================
+=            media query for tablet           =
+=============================================*/
+
+@media (width <= 850px) {
+  /*----------  categories  ----------*/
+    .categories h1 {
+      font-size: 1.5rem;
+    }
+  .cards {
+    min-width: 500px;
+    width: 70%;
+    min-height: 450px;
+    height: 30vw;
+  }
+  /*----------------------------------*/
+  /*----------  inf-benefits  ----------*/
+
+  .inf-benefits ul {
+    grid-template-areas:
+      "beneficio1 beneficio2"
+      "beneficio1 beneficio2"
+      "beneficio1 beneficio2"
+      "beneficio3 beneficio4"
+      "beneficio3 beneficio4"
+      "beneficio3 beneficio4";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto 1fr auto);
+    min-width: 350px;
+    width: 60%;
+    max-width: 1100px;
+    height: fit-content;
+  }
+
+  /*----------------------------------*/
+}
+
+/*=====  End of media query for tablet  ======*/
+
+/*=============================================
+=            media query for phone            =
+=============================================*/
+
+@media (width <= 650px) {
+  /*----------  inf-welcome  ----------*/
+  .carousel {
+    width: clamp(0px, 100%, 474px);
+    height: clamp(0px, 110vw, 520px);
+  }
+  .left-button {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .right-button {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  /*----------------------------------*/
+
+  /*----------  categories  ----------*/
+  .cards {
+    min-width: 0px;
+    width: 70%;
+    min-height: 0px;
+    height: 900px;
+    max-height: 900px;
+    grid-template-areas:
+      "bicicletas bicicletas"
+      " indumentaria indumentaria"
+      "accesorios accesorios"
+      "componentes componentes"
+      "servicios servicios";
+  }
+
+  /*----------------------------------*/
+
+  /*----------  inf-benefits  ----------*/
+
+  .inf-benefits ul {
+    min-width: 250px;
+    width: 70%;
+    max-width: 1100px;
+  }
+
+  .inf-benefits h2 {
+    font-size: clamp(1rem, 4vw, 2rem);
+  }
+
+  .benefits p {
+    font-size: clamp(0.8rem, 3.2vw, 1rem);
+  }
+
+  .benefits h4 {
+    font-size: clamp(0.8rem, 3.2vw, 1rem);
+  }
+
+  /*----------------------------------*/
+}
+
+/*=============================================
+=            card-min            =
+=============================================*/
+
+@media (width <= 470px) {
+  .cards {
+    width: 80%;
+  }
+}
+
+/*=====  End of card-min  ======*/
+
+/*=====  End of media query for phone  ======*/

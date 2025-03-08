@@ -1,0 +1,119 @@
+/*=============================================
+=            media query for laptop           =
+=============================================*/
+
+@media (width <= 1190px) {
+  /* reasignar tamaño al up-button */
+  .up-button img {
+    width: 3rem;
+  }
+  /* reasigna el padding del footer top */
+  .footer-top {
+    padding: 1.5rem 0rem;
+  }
+  /* reasigna el tamaño del logo del footer top */
+  .logo-footer img {
+    width: 16.5rem;
+  }
+  /* reasignar el tamaño del texto y el gap a los links de información del footer top */
+  .links-information {
+    gap: 1rem;
+    a {
+      font-size: 0.93rem;
+    }
+  }
+}
+
+/*=====  End of media query for laptop  ======*/
+
+/*=============================================
+=            media query for tablet           =
+=============================================*/
+
+@media (width <= 850px) {
+  /* reasignar tamaño al up-button */
+  .up-button img {
+    width: 2.8rem;
+  }
+  /* reasigna la dirección y el gap de las referencias de los elementos del footer top */
+  .references-footer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  /* reasigna la dirección y el gap de los elementos de contacto del footer top */
+  .contact-information {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  /* reasigna el tamaño del logo del footer top */
+  .logo-footer img {
+    width: 15rem;
+  }
+  /* reasigna el gap de los links de información del footer top */
+  .links-information {
+    gap: 2rem;
+  }
+  /* reasigna el tamaño del texto de footer bottom */
+  .footer-bottom {
+    font-size: 0.93rem;
+  }
+}
+
+/*=====  End of media query for tablet  ======*/
+
+/*=============================================
+=            media query for phone            =
+=============================================*/
+
+@media (width <= 650px) {
+  /* reasignar tamaño al up-button */
+  .up-button img {
+    width: 2.5rem;
+  }
+  /* reasigna la dirección y el gap de las referencias de los elementos del footer top */
+  .references-footer {
+    gap: 2rem;
+  }
+  /* reasigna la dirección y el gap de los elementos de contacto del footer top */
+  .contact-information {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  /* reasigna el tamaño del logo del footer top */
+  .logo-footer img {
+    width: 14rem;
+  }
+  /* reasigna las propiedades de los links de información y de los demás elementos que contiene del footer top*/
+  .links-information {
+    flex-direction: column;
+    margin: 0;
+    gap: 1rem;
+    hr {
+      margin: 0;
+    }
+    details {
+      gap: 0.8rem;
+    }
+    summary {
+      list-style: revert;
+      color: var(--color-5-blanco);
+      pointer-events: auto;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  /* reasigna el tamaño de los iconos de métodos de pago del footer top*/
+  .payment-methods img {
+    width: 3rem;
+  }
+  /* reasigna el tamaño del texto de footer bottom */
+  .footer-bottom {
+    font-size: clamp(0.8rem, 3.2vw, 0.93rem);
+  }
+}
+
+/*=====  End of media query for phone  ======*/
