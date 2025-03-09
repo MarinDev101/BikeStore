@@ -302,12 +302,6 @@ main > div:nth-child(odd) {
   width: clamp(100px, 70%, 1100px);
   height: clamp(100px, 6vw, 100px);
   position: relative;
-  /* border-right: 1px solid black; */
-
-  /* outline: 3px white solid;
-  outline-offset: 2px; */
-
-  /* box-shadow: -5px 0px 0px 0px black, 5px 0px 0px 0px black; */
 }
 
 .marco-carousel-trademarks::before {
@@ -339,21 +333,42 @@ main > div:nth-child(odd) {
   /* scrollbar-width: none; */
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 3;
 }
 
 .slider-trademarks {
   display: flex;
   align-items: center;
   flex-direction: row;
-  gap: 3rem;
   width: max-content;
   height: 100%;
+  animation-name: slider-logos;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .slider-trademarks img {
-  width: 10vw;
+  width: 15rem;
   max-width: 200px;
   height: auto;
+  margin-left: 5rem;
 }
+
+.slider-trademarks.paused {
+  animation-play-state: paused;
+}
+
+@keyframes slider-logos {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 
 /*=====  End of trademarks  ======*/
