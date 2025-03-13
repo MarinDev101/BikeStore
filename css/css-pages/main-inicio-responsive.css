@@ -9,6 +9,24 @@
     height: 30vw;
   }
   /*----------------------------------*/
+
+  /*----------  product-view  ----------*/
+
+  .content-product-view {
+    width: clamp(805px, 80%, 9900px);
+  }
+
+  .button-left-products{
+    left: -1rem;
+  }
+  
+  .button-right-products{
+    right: -1rem;
+  }
+
+
+  /*----------------------------------*/
+
   /*----------  inf-benefits  ----------*/
 
   .benefits p {
@@ -32,10 +50,22 @@
 =============================================*/
 
 @media (width <= 850px) {
+    /*----------  product-view  ----------*/
+
+    .content-product-view {
+      width: clamp(540px, 87%, 9900px);
+    }
+
+    .button-left-products{
+      left: -2rem;
+    }
+    
+    .button-right-products{
+      right: -2rem;
+    }
+  
+    /*----------------------------------*/
   /*----------  categories  ----------*/
-  .categories h1 {
-    font-size: 1.5rem;
-  }
   .cards {
     min-width: 550px;
     width: 70%;
@@ -87,6 +117,26 @@
 
   /*----------------------------------*/
 
+    /*----------  product-view  ----------*/
+
+    .content-product-view {
+      width: clamp(274px, 73%, 9900px);
+    }
+
+    .button-left-products{
+      left: -3vw;
+    }
+    
+    .button-right-products{
+      right: -3vw;
+    }
+    
+    .product-view h2{
+      font-size: clamp(1.1rem, 3.5vw, 2rem);
+    }
+
+    /*----------------------------------*/
+
   /*----------  categories  ----------*/
   .cards {
     min-width: 0px;
@@ -101,7 +151,10 @@
       "componentes componentes"
       "servicios servicios";
   }
-
+  
+  .categories h2 {
+    font-size: clamp(1.2rem, 4vw, 2rem);
+  }
   /*----------------------------------*/
 
   /*----------  inf-benefits  ----------*/
@@ -113,7 +166,7 @@
   }
 
   .inf-benefits h2 {
-    font-size: clamp(0.9rem, 4vw, 2rem);
+    font-size: clamp(0.95rem, 4vw, 2rem);
   }
 
   .benefits p {
@@ -142,6 +195,9 @@
 @media (width <= 470px) {
   .cards {
     width: 80%;
+  }
+  .content-product-view {
+    width: clamp(274px, 85%, 9900px);
   }
 }
 
